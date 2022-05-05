@@ -16,3 +16,18 @@ def exerciciomodel4(anos4, meses4, dias4):
 
 def exerciciomodel5(eleitores5, brancos5, nulo5, valido5):
     return print(f'O município tem um total de {eleitores5} eleitores, com a porcentagem de votos em branco sendo de {(brancos5/eleitores5)*100}%, votos em nulo sendo {(nulo5/eleitores5)*100}% e votos válidos sendo {(valido5/eleitores5)*100}%')
+
+def exerciciomodel6(salario6, reajuste6):
+    return print(f'O salário após o reajuste é de {(salario6*(reajuste6/100))+salario6}')
+
+def exerciciomodel7(carroimposto7):
+    return print(f'O valor total do carro é de {((carroimposto7*0.28)+carroimposto7)}')
+
+def exerciciomodel8(primeiranota8, segundanota8, terceiranota8):
+    return print(f'O valor da média é de {(primeiranota8+segundanota8+terceiranota8)/3}')
+
+def exerciciomodel9(quantidade9):
+    if quantidade9 < 12:
+        return print(f'O valor total é de {quantidade9*1.30}')
+    elif quantidade9 >= 12:
+        return print(f'O valor total é de {quantidade9*1}')

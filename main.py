@@ -1,7 +1,6 @@
 import ControlExercicios
 
 if __name__ == '__main__':
-
     ControlExercicios.exerciciocontrol1()
     "\n"
     ControlExercicios.exerciciocontrol2()
@@ -32,3 +31,9 @@ if __name__ == '__main__':
     ControlExercicios.exerciciocontrol15()
     "\n"
     ControlExercicios.exerciciocontrol16()
+    "\n"
+    ControlExercicios.exerciciocontrol17()
+    "\n"
+    ControlExercicios.exerciciocontrol18()
+    "\n"
+    ControlExercicios.exerciciocontrol19()

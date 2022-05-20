@@ -109,3 +109,12 @@ def exerciciocontrol15():
 
 def exerciciocontrol16():
     print(ModelExercicios.exerciciomodel16())
+
+def exerciciocontrol17():
+    print(ModelExercicios.exerciciomodel17())
+
+def exerciciocontrol18():
+    print(ModelExercicios.exerciciomodel18())
+
+def exerciciocontrol19():
+    print(ModelExercicios.exerciciomodel18())

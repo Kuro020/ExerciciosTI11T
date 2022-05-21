@@ -105,7 +105,7 @@ def exerciciomodel19():
         nota = int(input("Digite aqui a nota do aluno."))
         lista.append(nota)
         c = c + 1
-        if nota >= media:
+        if nota > media:
             this.contador = this.contador + 1
     lista.sort()
     print("A média da turma é " + str(sum(lista) / 20) + " e " + str(this.contador) + " alunos alcançaram a média.")
@@ -132,7 +132,7 @@ def exerciciomodel20():
     mediasalario = sum(lista) / len(lista)
     mediafilho = sum(lista2) / len(lista2)
     maiorsalario = max(lista)
-    percentual = (this.contador / sum(lista))*100
+    percentual = (len(lista)/this.contador)*100
 
     print("A média do salário da população é de: " + str(mediasalario) + "A média de filhos é de : " + str(mediafilho) +
           "O maior salário da cidade é de: " + str(maiorsalario) +

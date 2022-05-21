@@ -37,3 +37,5 @@ if __name__ == '__main__':
     ControlExercicios.exerciciocontrol18()
     "\n"
     ControlExercicios.exerciciocontrol19()
+    "\n"
+    ControlExercicios.exerciciocontrol20()

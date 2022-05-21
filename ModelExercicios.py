@@ -76,7 +76,7 @@ def exerciciomodel16():
 def exerciciomodel17():
     numeros = range(15, 101)
     media = sum(numeros) / len(numeros)
-    print("A média é" + media)
+    print("A média é" + str(media))
 
 def exerciciomodel18():
     numeros = int(input("digite aqui a quantidade de números que você irá digitar: "))
@@ -96,34 +96,43 @@ def exerciciomodel18():
     print("o maior número é: " + str(lista[len(lista) - 1]))
 
 def exerciciomodel19():
-    for i in range(20):
+    lista = [0]
+    media = sum(lista) / len(lista)
+    alunos = 20
+    c = 0
+
+    while c < alunos:
         nota = int(input("Digite aqui a nota do aluno."))
-        media = sum(nota) / len(nota)
+        lista.append(nota)
+        c = c + 1
         if nota >= media:
             this.contador = this.contador + 1
-    print("A média da turma é " + str(media) + "e " + str(this.contador) + "alunos alcançaram a média.")
+    lista.sort()
+    print("A média da turma é " + str(sum(lista) / 20) + " e " + str(this.contador) + " alunos alcançaram a média.")
 
 def exerciciomodel20():
     populacao = int(input("digite aqui a quantidade de pessoas que moram na cidade: "))
     digitados = 0
 
-
     lista = [0]
+    lista2 = [0]
 
     while digitados < populacao:
         salario = int(input("digite o salário da " + str(digitados + 1) + "°" + " pessoa: "))
-        filho = int(input("digite o quantos filhos a " + str(digitados) + "°" + " pessoa tem: "))
+        filho = int(input("digite o quantos filhos a " + str(digitados + 1) + "°" + " pessoa tem: "))
         if salario < 150:
             this.contador = this.contador + 1
 
-        lista.append(salario, filho)
+        lista.append(salario)
+        lista2.append(filho)
         digitados = digitados + 1
     lista.sort()
+    lista2.sort()
 
-    mediasalario = sum(salario) / len(salario)
-    mediafilho = sum(filho) / len(filho)
+    mediasalario = sum(lista) / len(lista)
+    mediafilho = sum(lista2) / len(lista2)
     maiorsalario = max(lista)
-    percentual = (this.contador / sum(salario))*100
+    percentual = (this.contador / sum(lista))*100
 
     print("A média do salário da população é de: " + str(mediasalario) + "A média de filhos é de : " + str(mediafilho) +
           "O maior salário da cidade é de: " + str(maiorsalario) +
